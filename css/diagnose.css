@@ -1,0 +1,183 @@
+main {
+	border-radius: 30px;
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+	margin: 6rem;
+	padding: 4rem 4rem;
+}
+main h2 {
+	color: #4b539a;
+	text-align: center;
+	margin-bottom: 4rem;
+}
+
+form {
+	padding-bottom: 6rem;
+}
+form.inactive {
+	display: none;
+}
+
+.first-section > div {
+	margin-bottom: 2.5rem;
+}
+
+label {
+	font-size: 1.5rem;
+	font-weight: 700;
+	line-height: 120%;
+	display: block;
+	margin-bottom: 0.5rem;
+}
+
+input[type='text'],
+input[type='number'] {
+	border-radius: 40px;
+	border: 1px solid rgba(0, 0, 0, 0.5);
+	padding: 1rem 2rem;
+	font-size: 1.3rem;
+}
+input.name {
+	width: 100%;
+}
+input.age {
+	width: 7rem;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type='number'] {
+	-moz-appearance: textfield;
+	appearance: textfield;
+}
+
+.radio-group {
+	display: flex;
+	gap: 1.75rem;
+	font-size: 1.3rem;
+}
+input[type='radio'],
+input[type='checkbox'] {
+	width: 24px;
+	height: 24px;
+	accent-color: darkgoldenrod;
+	flex-shrink: 0;
+}
+.age-gender {
+	display: flex;
+	gap: 4rem;
+}
+.gender-con {
+	flex: 1;
+}
+.gender-con label {
+	text-align: center;
+}
+.gender-con > div {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	gap: 3rem;
+	height: 59px;
+}
+
+.weight-con label {
+	text-align: center;
+	margin-bottom: 1.4rem;
+}
+.weight-con > div {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+.weight-con span {
+	margin-bottom: 1.5rem;
+}
+
+textarea {
+	border-radius: 40px;
+	border: 1px solid rgba(0, 0, 0, 0.5);
+	padding: 1rem 2rem;
+	font-size: 1.3rem;
+	width: 100%;
+	resize: vertical;
+}
+
+.second-section > div {
+	margin-bottom: 4rem;
+}
+.second-section .scores {
+	display: flex;
+	justify-content: center;
+	gap: 4rem;
+}
+.condition {
+	text-align: center;
+}
+.condition p {
+	font-size: 1.3rem;
+	font-weight: 500;
+	margin-bottom: 2rem;
+}
+.symptoms label {
+	text-align: center;
+}
+.symptoms > div {
+	width: max-content;
+	font-weight: 500;
+	margin: 2rem auto 0;
+}
+.symptoms span {
+	margin-bottom: 1.5rem;
+}
+
+.second-section > button {
+	margin: auto;
+	display: block;
+}
+
+section.result {
+	display: none;
+}
+section.result.active {
+	display: block;
+}
+section.result h3 {
+	color: #4b539a;
+	margin-bottom: 1rem;
+	font-size: 1.7rem;
+	font-weight: 700;
+	line-height: 120%;
+	letter-spacing: -0.015rem;
+}
+
+section.result > div {
+	font-size: 1.5rem;
+	font-weight: 700;
+	line-height: 120%;
+	margin-bottom: 1rem;
+}
+section.result > div span,
+.result-symptoms {
+	color: #ff9900;
+}
+.result-symptoms {
+	margin-top: 0.5rem;
+}
+.result-symptoms > div {
+	margin-bottom: 0.5rem;
+}
+.btn-group {
+	display: flex;
+	gap: 2rem;
+	margin-top: 4rem;
+}
+.btn-group button {
+	flex: 1;
+}
+.btn-group button:last-child {
+	color: #ff9900;
+	border: 1px solid #000;
+	background-color: transparent;
+}

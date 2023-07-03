@@ -1,0 +1,49 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+body {
+	font-weight: 400;
+	font-family: 'Quicksand', sans-serif;
+}
+img {
+	max-width: 100%;
+}
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1rem 4.5rem;
+	background: #4b539a;
+}
+button {
+	border-radius: 1.25rem;
+	background: #ff9900;
+	color: #ffffff;
+	font-size: 1.3rem;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 700;
+	line-height: 1.25rem;
+	letter-spacing: -0.015rem;
+	padding: 1.5rem 6rem;
+	border: none;
+	cursor: pointer;
+}
+h2 {
+	font-size: 2.2rem;
+	font-weight: 700;
+	line-height: 120%;
+	letter-spacing: -0.015rem;
+}
+nav ul {
+	list-style: none;
+	display: flex;
+	align-items: center;
+	gap: 3rem;
+	color: #ffffff;
+	font-size: 1.2rem;
+	font-weight: 700;
+	line-height: 1.25rem;
+	letter-spacing: -0.015rem;
+}

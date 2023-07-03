@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+		<link rel="stylesheet" href="./css/global.css" />
+		<link rel="stylesheet" href="./css/diagnose.css" />
+		<title>Diagmentia</title>
+
+		<script src="./scripts/diagnose.js" defer></script>
+	</head>
+	<body>
+		<!-- Navbar start -->
+		<header>
+			<img src="./assets/images/logo.png" alt="DiagMentia" />
+
+			<nav>
+				<ul>
+					<li>About</li>
+					<li>Features</li>
+					<li>Help Center</li>
+					<li>Team</li>
+				</ul>
+			</nav>
+		</header>
+		<!-- Navbar end -->
+
+		<!-- Main start -->
+		<main>
+			<h2>Dementia Expert System</h2>
+
+			<form id="form">
+				<section class="first-section">
+					<div>
+						<label for="name">Name</label>
+						<input type="text" name="name" id="name" class="name" required />
+					</div>
+
+					<div class="age-gender">
+						<div>
+							<label for="age">Age</label>
+							<input type="number" name="age" id="age" class="age" required />
+						</div>
+
+						<div class="gender-con">
+							<label for="gender">Gender</label>
+
+							<div>
+								<span class="radio-group"><input type="radio" name="gender" value="Male" required /> Male </span>
+								<span class="radio-group"><input type="radio" name="gender" value="Female" required /> Female </span>
+							</div>
+						</div>
+					</div>
+
+					<div class="weight-con">
+						<label for="weight">Weight</label>
+
+						<div>
+							<div>
+								<span class="radio-group"
+									><input type="radio" name="weight" value="10 to 20 kg | 22 to 44 lbs" required /> 10 to 20 kg | 22 to 44 lbs
+								</span>
+								<span class="radio-group"
+									><input type="radio" name="weight" value="20 to 40 kg | 44 to 88 lbs" required /> 20 to 40 kg | 44 to 88 lbs
+								</span>
+								<span class="radio-group"
+									><input type="radio" name="weight" value="40 to 60 kg | 88 to 132 lbs" required /> 40 to 60 kg | 88 to 132 lbs
+								</span>
+								<span class="radio-group"
+									><input type="radio" name="weight" value="60 to 80 kg | 132 to 176 lbs" required /> 60 to 80 kg | 132 to 176 lbs
+								</span>
+							</div>
+
+							<div>
+								<span class="radio-group"
+									><input type="radio" name="weight" value="80 to 100 kg | 176 to 220 lbs" required /> 80 to 100 kg | 176 to 220 lbs
+								</span>
+								<span class="radio-group"
+									><input type="radio" name="weight" value="100 to 120 kg | 220 to 264 lbs" required /> 100 to 120 kg | 220 to 264 lbs
+								</span>
+								<span class="radio-group"
+									><input type="radio" name="weight" value="more than 120kg | 220 to 264 lbs" required /> more than 120kg | 220 to 264 lbs
+								</span>
+							</div>
+						</div>
+					</div>
+
+					<div>
+						<label for="background">Family Background</label>
+						<textarea name="background" id="background" cols="30" rows="6"></textarea>
+					</div>
+				</section>
+
+				<section class="second-section">
+					<div class="condition">
+						<label for="condition">Past Medical Condition </label>
+						<p>Had any medical condition in the past? Let us know.</p>
+						<textarea name="condition" id="condition" cols="30" rows="6"></textarea>
+					</div>
+
+					<div class="scores">
+						<div>
+							<label for="mmse">MMSE Score</label>
+							<input type="number" name="mmse" id="mmse" min="0" max="30" required />
+						</div>
+
+						<div>
+							<label for="cdr">CDR Score</label>
+							<input type="number" name="cdr" id="cdr" min="0" max="3" required />
+						</div>
+					</div>
+
+					<div class="symptoms">
+						<label for="symptoms">Emotional And Psychological Symptoms</label>
+
+						<div>
+							<span class="radio-group"><input type="checkbox" name="symptoms" id="memory-loss" value="Memory Loss" /> Memory Loss </span>
+							<span class="radio-group"><input type="checkbox" name="symptoms" id="confusion" value="Confusion" /> Confusion </span>
+							<span class="radio-group"><input type="checkbox" name="symptoms" id="depression" value="Depression" /> Depression </span>
+							<span class="radio-group"><input type="checkbox" name="symptoms" id="agitation" value="Agitation" /> Agitation </span>
+							<span class="radio-group"><input type="checkbox" name="symptoms" id="hallucinations" value="Hallucination" /> Hallucination </span>
+						</div>
+					</div>
+
+					<button>Diagnose</button>
+				</section>
+			</form>
+
+			<section id="result" class="result">
+				<h3>Result</h3>
+
+				<div>Name: <span id="name-result"></span></div>
+				<div>Age: <span id="age-result"></span></div>
+				<div>Gender: <span id="gender-result"></span></div>
+				<div>Weight: <span id="weight-result"></span></div>
+				<div>Family Background: <span id="background-result"></span></div>
+				<div>Previous medical condition: <span id="condition-result"></span></div>
+				<div>Diagnosis: <span id="diagnosis-result"></span></div>
+				<div>Diagnosis Range: <span id="range-result"></span></div>
+				<div>
+					Positive Symptoms:
+
+					<div class="result-symptoms" id="result-symptoms">
+						<div>Memory Loss</div>
+						<div>Confusion</div>
+						<div>Depression</div>
+						<div>Agitation</div>
+						<div>Hallucination</div>
+					</div>
+				</div>
+
+				<div class="btn-group">
+					<button id="retake">Re-take Test</button>
+					<button id="print">Print</button>
+				</div>
+			</section>
+		</main>
+		<!-- Main end -->
+	</body>
+</html>
